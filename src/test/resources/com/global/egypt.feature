@@ -1,8 +1,8 @@
-Feature: Main scenario
+Feature: Main scenario Egypt
 
   @Sanity
     @Main_scenario
-  Scenario Outline: Verify that all countries present and have correct taxes. Verify that the percentage diagram is shown correctly.
+  Scenario Outline: Verify that the country Egypt present and have correct taxes. Verify that the percentage diagram is shown correctly.
     Given I open calc page
     Then I choose the country "<country_name>"
     Then I choose the VAT "<VAT>"
@@ -15,7 +15,7 @@ Feature: Main scenario
 
     Examples:
       | country_name | VAT |
-      | Belgium      | 6  |
-      | Belgium      | 12  |
-      | Belgium      | 21  |
+      | Egypt        | 5   |
+      | Egypt        | 14  |
+
 
